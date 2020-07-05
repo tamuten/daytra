@@ -1,0 +1,208 @@
+/* 全体のレイアウト */
+
+ul {
+  margin-top: 0px;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+}
+
+/* ヘッダー */
+
+header {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+}
+
+header .container:after {
+  clear: both;
+}
+
+header .container {
+  line-height: 60px;
+}
+
+.header-left {
+  float: left;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 100px;
+}
+
+.header-right {
+  float: right;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 100px;
+}
+
+.header-right li {
+  float: left;
+  list-style: none;
+  margin-right: 40px;
+}
+
+/* コンテンツ */
+/* トップ画像 */
+
+.top-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.top-wrapper img {
+  width: 100%;
+}
+
+.top-image {
+  height: 479.94px;
+}
+
+.lesson-wrapper {
+  width: 100%;
+}
+
+/* about */
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.about-in .x {
+  float: left;
+  width: 50%;
+}
+
+.about-in .image {
+  text-align: center;
+}
+
+.about-in img {
+  display: inline-block;
+  width: 90%;
+}
+
+.about-in {
+  margin: 0 auto;
+  width: 1179px;
+}
+
+.text-contents {
+  width: 90%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.clear {
+  clear: both;
+}
+
+/* コース紹介 */
+
+.course {
+  width: 1179px;
+  margin: 0 auto;
+}
+
+.lesson {
+  width: calc(100% / 3);
+  float: left;
+}
+
+.lesson img {
+  width: 100%;
+  display: block;
+  /* vertical-align: top; */
+}
+
+.lesson a {
+  font-weight: bold;
+}
+
+.lesson-in{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.lesson-in .text{
+  font-size: 16px;
+}
+
+/* お問い合わせ */
+
+.contact{
+  text-align: center;
+}
+
+.mail{
+   border:2px solid #d3d3d3;
+   border-radius: 30px;
+   height: 50px;
+   width: 600px;
+   font-size: 17px;
+   padding: 0 15px;
+}
+
+.mail:focus{
+  outline: none;
+}
+
+.button1{
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  background-color: #fa8072;
+  padding: 25px 125px;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+
+.button1:hover{
+  cursor: pointer;
+}
+
+.contact-in{
+  width: 1179px;
+  margin: 0 auto ;
+  padding-bottom: 120px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+/* フッター */
+footer{
+  min-height: 120px;
+  width: 100%;
+}
+
+footer .message{
+  width: 1197px;
+  margin: 0 auto;
+}
+
+.copy{
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: normal;
+  text-align: right;
+}

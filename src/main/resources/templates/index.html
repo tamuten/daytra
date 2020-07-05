@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>30DAYSトライアル</title>
+<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="header-left">
+				<a>30DAYSトライアル</a>
+			</div>
+			<div class="header-right">
+				<ul>
+					<li><a href="#">デイトラとは</a></li>
+					<li><a href="#">コース一覧</a></li>
+					<li><a href="#">お問い合わせ</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="top-wrapper">
+		<div class="container">
+
+			<div class="top-image">
+				<img th:src="@{/img/main-vsual.png}">
+			</div>
+		</div>
+
+	</div>
+	<div class="lesson-wrapper">
+		<div class="container">
+			<form role="form" action="/regist" th:action="@{/regist}"
+				th:object="${indexForm}" method="post">
+				<div class="about">
+					<div class="title">
+						<a>デイトラとは</a>
+					</div>
+					<div class="about-in">
+						<div class="image x">
+							<img th:src="@{/img/about.png}">
+						</div>
+						<div class="text x">
+							<div class="text-contents">
+								<p>
+									デイトラとは、無料で・迷わず・楽しく学べるプログラミング学習アプリです。
+									毎日設定された課題をこなしていくだけで、未経験から30日でプログラミングスキルが身に付きます。 <br>
+									1日1題30日でプロのWebエンジニアを目指しましょう！
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="course">
+					<div class="title">
+						<a>コース一覧</a>
+					</div>
+					<div class="lessons">
+						<div class="lesson">
+							<div class="lesson-in">
+								<div class="image">
+									<img th:src="@{/img/web_first.png}">
+								</div>
+								<div class="text">
+									<a> HTML / CSS / Bootstrap </a>
+								</div>
+							</div>
+						</div>
+						<div class="lesson">
+							<div class="lesson-in">
+								<div class="image">
+									<img th:src="@{/img/web_second.png}">
+								</div>
+								<div class="text">
+									<a> HTML / CSS / JavaScript / jQuery </a>
+								</div>
+							</div>
+						</div>
+						<div class="lesson">
+							<div class="lesson-in">
+								<div class="image">
+									<img th:src="@{/img/web_third.png}">
+								</div>
+								<div class="text">
+									<a> PHP / WordPress </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="contact">
+					<div class="contact-in">
+
+						<div class="title">
+							<a>お問い合わせ</a>
+						</div>
+
+						<div class="form">
+							<a>さあ今日から30日間を始めよう！</a> <br> <input type="text" class="mail"
+								name="mailAddress" th:value="*{mailAddress}"
+								placeholder="メールアドレス" />
+						</div>
+						<div class="start">
+							<input type="submit" class="button1" value="無料ではじめる" />
+						</div>
+
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer>
+		<div class="message">
+			<div class="copy">
+				<a>Copyright(C) 2020 東京フリーランス ALL Rights Reserved.</a>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
