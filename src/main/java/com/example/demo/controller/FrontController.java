@@ -19,6 +19,7 @@ public class FrontController {
 	public String regist(@ModelAttribute("indexForm") @Validated IndexForm form, BindingResult result) {
 
 		System.out.println("regist");
+		System.out.println("テスト");
 
 		return "index";
 	}
